@@ -21,11 +21,11 @@
                 <div style="flex:1"><p><strong>Amount:</strong>₱{{item.get_total|floatformat:2}}</p></div>
            <h3>Items: <strong>{{total_items}}</strong></h3>
                     <h3>Total: <strong> ₱{{total|floatformat:2}}</strong></h3>
-                    <h3>Ordered By: {{ item.order.customer.name }}</h3>
-                    <h3>Delivered To: {{ item.order.customer.address }}</h3>
+                    <p>Ordered By: {{ item.order.customer.name }}</p>
+                    <p>Delivered To: {{ item.order.customer.address }}</p>
      {% endfor %}
     </div>
-<img height="100px" width="250px"src="{{ barcode.barcode.url }}">
+<img height="90px" width="200px"src="{{ barcode.barcode.url }}">
 
 
 
